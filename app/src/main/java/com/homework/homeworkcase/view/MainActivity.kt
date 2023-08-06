@@ -12,7 +12,7 @@ class MainActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-     //   TODO("RENKLER İSİMLER STRİNGLERE XML DE İD VER VE YUKARIDAKI SEYİ PROOGRESI KALDIR NOSCJEN TEMA")
+ 
     }
 
 }
