@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/device_modem_graph"
+    app:startDestination="@id/deviceListFragment">
+
+    <fragment
+        android:id="@+id/deviceListFragment"
+        android:name="com.homework.homeworkcase.view.DeviceListFragment"
+        android:label="fragment_modem_list"
+        tools:layout="@layout/fragment_modem_list" >
+        <action
+            android:id="@+id/action_deviceListFragment_to_modeminfoFragment"
+            app:destination="@id/modeminfoFragment" />
+        <argument
+            android:name="update"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_deviceListFragment_to_guideFragment"
+            app:destination="@id/guideFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modeminfoFragment"
+        android:name="com.homework.homeworkcase.view.ModeminfoFragment"
+        android:label="fragment_modeminfo"
+        tools:layout="@layout/fragment_modeminfo" >
+        <action
+            android:id="@+id/action_modeminfoFragment_to_deviceListFragment"
+            app:destination="@id/deviceListFragment" />
+        <argument
+            android:name="modemid"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/guideFragment"
+        android:name="com.homework.homeworkcase.view.GuideFragment"
+        android:label="fragment_guide"
+        tools:layout="@layout/fragment_guide" >
+        <action
+            android:id="@+id/action_guideFragment_to_deviceListFragment"
+            app:destination="@id/deviceListFragment" />
+    </fragment>
+</navigation>

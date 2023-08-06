@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e0e0e0"
+    android:id="@+id/maincontainer"
+    tools:context=".view.DeviceListFragment">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonReset"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Reset"
+        android:textColor="@color/white"
+        android:background="@drawable/reset_btn"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/ben1" />
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="Yaşar Baki" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/devicelist_recylerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e0e0e0"
+    android:id="@+id/maincontainer"
+
+    tools:context=".view.GuideFragment">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_baseline_task_alt_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Transaction successful" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_back_guide"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:background="@drawable/reset_btn"
+        android:text="Ok" />
+
+
+</LinearLayout>
